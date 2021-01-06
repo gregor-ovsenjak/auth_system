@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"><link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link rel="stylesheet", href="../../css/index2.css">
+<script type = "module" src="../helper_functions/redirection_handler.js"></script>
+<script type="module" src="../helper_functions/admin_options.js"></script>
+<script type="module" src="../dashboard.js"></script>
+  <title>Admin</title>
+</head>
+<body><div class="sidenav">
+<a href="http://localhost:3000/admin/dashboard">Dashboard</a>
+<a href="#">Clients</a>
+<a href="#">Contact</a>
+</div>
+<div class="wrapper_fadeInDown">
+  <form action="/logout?_method=DELETE" method="POST">
+    <button id="logout" type="submit">Log Out</button>
+  </form>
+  <h1>Dashboard</h1><div class="h5-container">
+  <h5 class="listOfUsers">List of users:</h5>
+  <h5 class="latestLogins">Latest active users:</h5></div>
+<div class="container">
+<div id="formContent">
+<!-- Tabs Titles -->
+</div>
+<div id="lastLogin">
+<!-- Tabs Titles -->
+</div>
+</div>
+</div>
+</body>
